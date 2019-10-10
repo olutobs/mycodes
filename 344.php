@@ -8,7 +8,7 @@ $_SESSION['names'] = $name_input;
  //remember wschools
 //change what it says "please sign in"
 //
-$pool = "please, sign in";
+$pool = "please, sign";
 $num = 19;
 $name = 'Olutobs';
  //making a server
