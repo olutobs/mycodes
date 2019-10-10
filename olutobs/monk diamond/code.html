@@ -1,0 +1,68 @@
+<html>
+ <head>
+     
+  <title>Code</title>   
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+   <style>
+     
+     body {
+   background-color: lightpink;
+   padding: 30px;
+   font-family: 'Amatic SC', cursive;
+   text-align: center
+  } 
+    
+     
+     
+     
+     
+     
+     
+     </style>  
+   
+ </head>   
+    
+    
+   <body>  
+    
+  
+     
+     
+   <h1>Please enter code</h1>
+   <input id="passwordBox" type="password"/></p>
+ <a href="diamond.html" onclick="return checkPassword();">
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   
+    <a class="navbar-brand" href="#"><h1>code submit</h1></a>
+    
+
+       <button type="submit" onclick="checkPassword()" class="btn btn-primary"><h1>submit</h1>
+       </button>
+      
+
+       
+       <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "12345") {
+   // return true; 
+        location.replace ("help.html");
+   }
+      else
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>      
+       
+   </body> 
+    
+    
+    
+    
+    
+    
+    
+</html>

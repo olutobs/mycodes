@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Password</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+ <style>
+  body {
+   background-color: lightpink;
+   padding: 30px;
+   font-family: 'Amatic SC', cursive;
+   text-align: center
+  }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "olaogun") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+</head>
+<body>
+<h1>
+ <p style="font-size: 30pt;">THE MONK DIAMOND DISCOVERY</p>
+ <p>Please enter the password to view this website.</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+ <a href="monkdiamonddiscovery.html" onclick="return checkPassword();">
+  Take to next page
+ </a>
+</body>
+    </h1>
+</html>

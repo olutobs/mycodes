@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Password</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <style>
+  body {
+   background-color: lightpink;
+   padding: 30px;
+   font-family: 'Amatic SC', cursive;
+   text-align: center
+  }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "Ernest300") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+</head>
+<body>
+<h1>
+ <p style="font-size: 30pt;">PLEASE ENTER CODE</p>
+ 
+ <p>CODE:<input id="passwordBox" type="password"/></p>
+ <a href="diamond.html" onclick="return checkPassword();">
+  
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><h1>SUBMIT CODE</h1></a>
+  <a href="help.html"><button type="button" class="btn btn-primary"><h1>SUBMIT</h1></button></a> 
+
+ 
+ 
+
+</body>
+    </h1>
+</html>

@@ -1,0 +1,187 @@
+<html>
+ <head>
+     
+  <title>
+     yearly goals 
+  </title>   
+     
+   <script>
+       
+ 
+     
+    function addItem() {
+        
+        let i;
+        for(i = 1; i < 4; i++) {
+        
+           var newItem = document.createElement("div");
+           newItem.innerHTML = document.getElementById("box"+1).value;
+           document.getElementById("list"+1).appendChild(newItem);
+        } 
+    }
+     
+     </script>  
+     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  
+  
+     <style>
+     
+       body {
+      
+      
+      
+     background-color: lightblue;
+   padding: 30px;
+   font-family: 'Amatic SC', cursive;
+           text-align: center}
+         
+         .title {
+             
+            background-color: plum;
+      
+             
+         }  
+         
+          .heading{
+             
+            background-color: brown;
+            color: white;
+             
+         }
+         
+         .eni{
+             
+          text-align: left ;
+       
+             
+         }
+         .oladele{
+             
+        text-align: right; 
+             
+             
+             
+             
+         }
+         
+         
+         .lists{
+             
+             float: left;
+             
+             
+             
+         }
+         
+         .lists2{
+             
+           float: right;  
+             
+             
+             
+         }
+         
+         .olawale {
+             
+          float: left;   
+             
+             
+             
+         }
+         
+         
+         .lists3{
+             
+           float: left;  
+             
+         }
+         
+         
+     </style>   
+         
+         
+                                                                                                                                                                                                                                    
+    
+     
+    
+<div class="title">
+<h1>Welcome, please find your name and enter your yearly goals :)</h1>    
+    </div>
+    
+    <div class="heading">
+       
+        <p> Your yearly goal must be very clear and succinct</p>
+                                                                                                                                    
+        </div>
+ 
+     
+
+   <div class="eni">    
+                                        
+        <div class="lists">   
+            <h1>eniola</h1>
+             <h1>
+             <input type="text" id="box1" placeholder="Type here to add task"/>
+             </h1>
+             <br/>
+             <h2>
+             <input type="button" id="btn1" value="Add item "onclick="addItem();" class="police"/>
+                 <br/>
+                <br/>
+                <br/>
+            </h2>
+         <div id="list1"></div> 
+        </div>
+    </div>
+    
+    <div  class="oladele"> 
+       
+        <div class="lists2">
+                <h1>oladele</h1>
+    
+                    <h1>
+                 <input type="text" id="box2" placeholder="Type here to add task"/>
+                    </h1>
+                 <br/>
+                 <h2>
+                 <input type="button" id="btn2" value="Add item "onclick="addItem();" class="cake"/>
+                 <br/>
+                    </h2>
+                 <div id="list2"></div> 
+                    <br/>
+    
+        </div>
+    
+     </div>
+    
+  
+    
+      <div class="olawale">
+          <h1>olawale</h1>
+          <div class="lists3">
+             <h1>
+             <input type="text" id="box3" placeholder="Type here to add task"/>
+                </h1>
+             <br/>
+             <h2>
+             <input type="button" id="btn3" value="Add item "onclick="addItem();" class="food"/>
+             <br/>
+                </h2>
+             <div id="list3"></div> 
+   
+            </div>
+     </div>
+     
+   
+     
+    
+    
+    
+    
+</body>  
+    
+    
+
+</html>

@@ -1,0 +1,268 @@
+<html>
+
+   
+
+    <title>
+
+   
+
+    </title>
+
+   
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  
+  
+  
+ <style>
+     
+  body {
+      
+      
+      
+     background-color: mediumpurple;
+   padding: 30px;
+   font-family: 'Amatic SC', cursive;
+   text-align: center
+  }
+     
+    </style>
+
+   
+
+    <body>
+
+       
+
+<!--        OLTOBS-->
+
+       
+
+        <p id="error"></p>
+
+        <label><h2>Enter your List</h2></label>
+
+        <input id="tob" class="tob"><br>
+
+        <div id="outlist"></div>
+
+       
+
+<!--
+
+        OLUTOBS
+
+       
+
+-->
+
+<!--    add list-->
+
+       
+
+        <button class="but_list" onclick="add_link()"><h3> add list</h3></button>
+
+       
+
+            
+
+        
+
+        <div class="enjoy">
+
+           
+
+            <p id="enjoy1"> <h2>Is Today Your Lucky Day?</h2></p>
+
+           
+
+        <button id="but0" onclick="odd()" class="but0" > <h3>See If You Can Get The To-Do list/</h3></button>
+
+            <br>
+
+            <br>
+
+       
+
+        
+
+        </div>
+
+       
+
+        <div class="pic">
+
+           
+
+            <img src="https://getcodingkids.com/wp-content/uploads/2016/05/ToDoList.jpg" class="pic1" id="pic1_id">
+
+            <img src="https://getcodingkids.com/wp-content/uploads/2016/05/VolkovLogo.jpg" class="pic2" id="pic2_id">
+
+       
+
+        </div>
+
+       
+
+        <script>
+
+           
+
+            //olutob
+
+           
+
+//            function add_link() {
+
+//               
+
+//                let dad = document.createElement('li');
+
+//                dad.innerHTML = document.getElementById('tob').value;
+
+//                document.getElementById('outlist').appendChild(dad);
+
+//               
+
+//            }
+
+//           
+
+            
+
+             function add_link() {
+
+                 
+
+                  let dad, result;
+
+                
+
+              
+
+                       result = document.getElementById('tob').value;
+
+                                
+
+                         if(result.length > 1) {
+
+                             // let result = document.getElementById('tob').value;
+
+                              dad = document.createElement('li');
+
+                             dad.innerHTML= result;
+
+                             document.getElementById('outlist').appendChild(dad);
+
+ 
+
+                          } else {
+
+                                document.getElementById('error').innerHTML="Please enter a word";
+
+                             }
+
+                }
+
+           
+
+            
+
+//            OLUTOBS
+
+           
+
+            // picture
+
+           
+
+            let prac1 =  document.querySelector('.pic1');    
+
+        prac1.style.display = 'none';
+
+           
+
+                   
+
+            let prac2 =  document.querySelector('.pic2');    
+
+        prac2.style.display = 'none';
+
+           
+
+       
+
+            
+
+            function odd() {
+
+               
+
+           document.getElementById('enjoy1').innerHTML = "sanitation";
+
+           
+
+            
+
+            }
+
+           document.querySelector('.but0').addEventListener('click', function(){
+
+               
+
+        let num = Math.floor(Math.random() * 2)+1; 
+
+                alert(num);
+
+        let prac1 =  document.querySelector('.pic'+num);    
+
+        prac1.style.display = 'block';
+
+               
+
+                
+
+                
+
+                
+
+            });
+
+           
+
+      
+
+//            prac1.src = 'pic'+num+'jpg';
+
+    // document.querySelector('.pic'+num)
+
+        </script>
+
+   
+
+    
+
+    
+
+    
+
+    
+
+    </body>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+</html>

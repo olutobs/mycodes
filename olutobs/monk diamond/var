@@ -1,0 +1,40 @@
+html>
+    
+<head>
+    
+    
+    
+  <title>
+     Password Page 
+      
+  </title>  
+        
+    
+</head>  
+    
+    
+ <body>
+     
+     
+     <script>
+     
+     alert("We need a pasword");
+     alert("If strugling use gobblesmack123");
+         
+var dogName = "Ernest";
+var TM = "3";
+var el = "Bairstone";
+var campRations = 2 + 1;
+var dogb = 5 - 4;
+         
+         
+alert var dogb 
+     
+     
+     </script>
+      
+     
+ </body>   
+    
+    
+</html>
