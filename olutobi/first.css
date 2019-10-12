@@ -1,0 +1,22 @@
+.first{
+  background-color:#C70039;
+  color: white;
+  height: 400px;
+  margin: 100px;
+  text-align: center;
+  padding-top: 175px;
+}
+  .second{
+  background-color:#DAF7A6;
+  color: white;
+  height: 400px;
+  margin: 100px;
+  text-align: center;
+
+}
+
+  .content1{
+  height: 150px;
+  margin-left:90px;
+  background-color: blue; 
+  }
