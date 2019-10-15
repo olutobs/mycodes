@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+session_start()
 $_SESSION['names'] = $name_input;
 
 //make sure dad puts it on the cloud and make 2 pages. when go 
