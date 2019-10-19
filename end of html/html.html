@@ -73,10 +73,39 @@ Top 3 facts about the earth
 
 <hr>
  want to know more?
-<input type="button" value="click me to find out more" onclick="https://space-facts.com/earth/?" />
+ <br>
+<input type="button" value="click me to find out more" onclick="redirect()" />
+
+<button>
+    <a href="https://space-facts.com/earth/?">click me to find out more</a>
+</button>
 
 
+<script>
 
+  //create a redirect function
+  
+  /**
+  1. to write a function start with '''''' function
+  2. give it a name follow by () 
+  3. curly bracket
+  4. write what you want the function to do in the bracket
+
+  */
+
+  function redirect(){
+    window.location = "https://space-facts.com/earth/?"; // windows.location to redirect to another file
+  
+  }
+
+// function needs to return something
+  function shown(x) {
+    alert(x)
+  }
+
+  shown("mummy")
+
+</script>
 
 
 </body>
