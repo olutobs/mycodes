@@ -9,7 +9,7 @@ body{
     
     background-image:linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322)), url('image/logo/camera/camera.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: right;
     background-color: #e74cec;
     height: 95vh;
     position: relative;
@@ -24,18 +24,34 @@ body{
     left: 40px;
 }
 .logo{
-    height: 75px;
+    height: 35px;
 
 }
 
 .heading-primary{
-
+color: white;
+text-transform: uppercase;
 }
 
 .heading-primary-main{
-
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
 }
 
 .heading-primary-sub{
-    
+  
+   font-size: 20px;
+   font-weight: 400;
+   letter-spacing: 15px;
+   /* text-align:center; */
+}
+.text-box{
+position: absolute;
+top: 50%;
+left: 50% ;
+transform: translate(-50%, -50%);
+background-color: purple;
+text-align: center;
 }
