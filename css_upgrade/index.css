@@ -1,8 +1,10 @@
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     color: white;
-    font-size:2em;
+    font-size:16px;
     line-height: 1.7;
+    font-weight:400;
+    font-family: 'Lato', sans-serif;
 }
 
 .header{
@@ -38,20 +40,77 @@ text-transform: uppercase;
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
-}
 
+    animation-name: moveInLeft ;
+    animation-duration: 3s ;
+    animation-delay: 2s;
+}
 .heading-primary-sub{
   
    font-size: 20px;
    font-weight: 400;
    letter-spacing: 15px;
    /* text-align:center; */
+   animation-name: moveInRight ;
+    animation-duration: 3s ;
+    animation-delay:2s ;
 }
 .text-box{
 position: absolute;
 top: 50%;
 left: 50% ;
 transform: translate(-50%, -50%);
-background-color: purple;
+/* background-color: purple; */
 text-align: center;
 }
+
+
+@keyframes moveInLeft{
+ 
+ 0%{
+
+opacity: 0;
+transform: translateX(-200px);
+
+ }   
+80%{
+
+transform: translateX(20px);
+
+}
+
+
+100%{
+opacity: 1;
+transform: translate(0);
+
+}
+
+}
+
+
+
+@keyframes moveInRight{
+ 
+    0%{
+   
+   opacity: 0;
+   transform: translateY(-500px);
+   
+    }   
+   80%{
+   
+   transform: translateY(50px);
+   
+   }
+   
+   
+   100%{
+   opacity: 1;
+   transform: translate(0);
+   
+   }
+   
+   }
+
+
