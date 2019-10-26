@@ -9,7 +9,7 @@ body{
 
 .header{
     
-    background-image:linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322)), url('image/logo/camera/camera.jpg');
+    background-image:linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322)), url('image/crazy.jpg');
     background-size: cover;
     background-position: right;
     background-color: #e74cec;
@@ -48,7 +48,8 @@ text-transform: uppercase;
     animation-duration: 3s ;
     animation-delay: 2s;
 }
-.heading-primary-sub{      
+.heading-primary-sub{  
+    padding-top: 70px;    
     display: block;
    font-size: 20px;
    font-weight: 400;
@@ -60,7 +61,7 @@ text-transform: uppercase;
 }
 .text-box{
 position: absolute;
-top: 37%;
+top: 40%;
 left: 50% ;
 transform: translate(-50%, -50%);
 /* background-color: purple; */
