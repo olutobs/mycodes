@@ -1,4 +1,4 @@
-<?php
+   <?php
 session_start();
 //make sure dad puts it on the cloud and make 2 pages. when go to 3page say "hello,name,welcome
 
