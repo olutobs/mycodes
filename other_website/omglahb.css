@@ -1,0 +1,105 @@
+.omp{
+    padding-left: 50%;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 50px rgb(85, 209, 199),      /* inner white */
+        inset 20px 0 80px #f0f,   /* inner left magenta short */
+        inset -20px 0 80px #0ff,  /* inner right cyan short */
+        inset 220px 0 300px #f0f,  /* inner left magenta broad */
+        inset -220px 0 300px #0ff, /* inner right cyan broad */
+        0 0 50px rgb(84, 226, 231),            /* outer white */
+        -10px 0 80px #f0f,        /* outer left magenta */
+        10px 0 80px #0ff;         /* outer right cyan */
+}
+.heading-primary{
+    color:purple;
+    text-transform: uppercase;
+    }
+    
+    .heading-primary-main{
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 35px;
+        
+    
+        animation-name: moveInLeft ;
+        animation-duration: 3s ;
+        animation-delay: 2s;
+    }
+    .heading-primary-sub{  
+        padding-top: 70px;    
+        display: block;
+       font-size: 20px;
+       font-weight: 400;
+       letter-spacing: 15px;
+       /* text-align:center; */
+       animation-name: moveRight;
+        animation-duration:3s;
+        animation-delay:2s;
+    }
+    .text-box{
+    position: absolute;
+    top: 40%;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+    /* background-color: purple; */
+    text-align: center;
+    }
+    @keyframes moveInLeft{
+ 
+        0%{
+       
+       opacity: 0;
+       transform: translateX(-20px);
+       
+        }   
+       80%{
+       
+       transform: translateX(200px);
+       
+       }
+       --------
+       
+       100%{
+       opacity: 1;
+       transform: translate(0);
+       
+       }
+       
+       }
+       
+       
+       
+       @keyframes moveRight{
+           0%{  opacity: 0;
+          transform: translateY(-20px);
+           }   
+          80%{
+          
+          transform: translateY(200px);
+          
+          }
+          
+          
+          100%{
+          opacity: 1;
+          transform: translate(0);
+          
+          }
+          
+          }
+          @keyframes moveBottom{
+           0%{  opacity: 0;
+          transform: translateY(30px)
+           }   
+          
+            100%{
+          opacity: 1;
+          transform: translate(0);
+          
+          }
+          
+       }
