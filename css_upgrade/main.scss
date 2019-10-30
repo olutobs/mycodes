@@ -1,5 +1,19 @@
 
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
 @import "base/base";
+
+@import "pages/home";
+
+@import "componets/button";
+
+@import "layout/header";
+
 
 
 body{
@@ -11,174 +25,10 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-.header{
-    
-    background-image:linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322)), url('image/crazy.jpg');
-    background-size: cover;
-    background-position: left;
-    background-color: #e74cec;
-    height: 95vh;
-    position: relative;
-    /* clip-path: circle(40%)
-  */
-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
 
 
 
-}
-
-
-.logo-box{
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-.logo{
-    height: 35px;
-
-}
-
-.heading-primary{
-color: white;
-text-transform: uppercase;
-}
-
-.heading-primary-main{
-    display: block;
-    font-size: 60px;
-    font-weight: 400;
-    letter-spacing: 35px;
-    
-
-    animation-name: moveInLeft ;
-    animation-duration: 3s ;
-    animation-delay: 2s;
-}
-.heading-primary-sub{  
-    padding-top: 70px;    
-    display: block;
-   font-size: 20px;
-   font-weight: 400;
-   letter-spacing: 15px;
-   /* text-align:center; */
-   animation-name: moveRight;
-    animation-duration:3s;
-    animation-delay:2s;
-}
-.text-box{
-position: absolute;
-top: 40%;
-left: 50% ;
-transform: translate(-50%, -50%);
-/* background-color: purple; */
-text-align: center;
-}
-
-
-@keyframes moveInLeft{
- 
- 0%{
-
-opacity: 0;
-transform: translateX(-20px);
-
- }   
-80%{
-
-transform: translateX(200px);
-
-}
-
-
-100%{
-opacity: 1;
-transform: translate(0);
-
-}
-
-}
-
-
-
-@keyframes moveRight{
-    0%{  opacity: 0;
-   transform: translateY(-20px);
-    }   
-   80%{
-   
-   transform: translateY(200px);
-   
-   }
-   
-   
-   100%{
-   opacity: 1;
-   transform: translate(0);
-   
-   }
-   
-   }
-   @keyframes moveBottom{
-    0%{  opacity: 0;
-   transform: translateY(30px)
-    }   
-   
-     100%{
-   opacity: 1;
-   transform: translate(0);
-   
-   }
-   
-}
-
-.btn:link,
-.btn:visited {
-text-transform: uppercase;
-text-decoration: none;
-padding: 15px 40px;
-display: inline-block;
-border-radius:100px;
-transition: all .2s;
-position:relative;
-}
-.btn:hover{
- transform: translateY(-13px) ;  
- box-shadow: 0  10px 20px rgba( 0, 0, 2);
- 
-}
-.btn:active{
-    transform: translateY(1px);
-}
-.btn-white{
-    background-color: white;
-    color: palevioletred;
-}
-.btn::after{
- content: "";   
- display: inline-block;
- height:100%;
- width:100%;
- border-radius: 100px;
- position: absolute;
- top:0;
- left:0;
- z-index: -1;
- transition: all .4s;
-}
-.btn-white::after{
-    background-color:white;
-}
-.btn:hover::after{
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated{
-
-animation: moveBottom .5s ease-out .75;
-
-}
 
 
 
