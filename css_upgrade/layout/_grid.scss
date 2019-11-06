@@ -9,6 +9,7 @@
     @include clearfix;
 
     [class^="col-"]{
+    padding-top: 5px;
     text-transform: uppercase;
     text-align: center;
     height: 40px;
