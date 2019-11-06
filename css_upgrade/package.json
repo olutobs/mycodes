@@ -1,17 +1,17 @@
 {
-"name": "natours",
-"version": "1.0.0",
-"description": "Landing page for natous",
-"main": "index.js",
-"scripts": {
-    "compile:sass": "node-sass main.scss index.css"
-},
-"author": "Tobi",
-"license": "ISC",
-"devDependencies": {
-   "node-sass": "4.13.0"
-} ,
-"dependencies": {
-    "jquery": "3.4.1"
-}
+    "name": "natours",
+    "version": "1.0.0",
+    "description": "Landing page for natous",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass main.scss index.css -w"
+    },
+    "author": "Tobi",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "4.13.0"
+    },
+    "dependencies": {
+        "jquery": "3.4.1"
+    }
 }
