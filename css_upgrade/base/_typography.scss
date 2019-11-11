@@ -1,7 +1,9 @@
 
    body{
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    color: white;
+    color: #DC143C
+
+    ;
     font-size:16px;
     line-height: 1.7;
     font-weight:400;
@@ -10,15 +12,17 @@
 }
 
 .heading-primary{
-    color: white;
+    color: #DB7093;
     text-transform: uppercase;
     }
     
     .heading-primary-main{
         display: block;
         font-size: 60px;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 35px;
+        // color:#D277 ;
+        opacity: 10;
         
     
         animation-name: moveInLeft ;
@@ -28,13 +32,22 @@
     .heading-primary-sub{  
         padding-top: 30px;    
         display: block;
-       font-size: 100000px;
-       font-weight: 400;
+       font-size: 20px;
+       font-weight: 600;
        letter-spacing: 15px;
+    //    color://;
+       padding-bottom: 50px;
+       
        /* text-align:center; */
        animation-name: moveRight;
         animation-duration:3s;
         animation-delay:2s;
     }
     
+    .heading-secondary{
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-image: linear-gradient(to right, #ffc0cb, #7fffd4 );
+    }
     

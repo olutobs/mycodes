@@ -28,7 +28,7 @@
 
 body {
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  color: white;
+  color: #DC143C;
   font-size: 16px;
   line-height: 1.7;
   font-weight: 400;
@@ -36,28 +36,36 @@ body {
   padding: 3rem; }
 
 .heading-primary {
-  color: white;
+  color: #DB7093;
   text-transform: uppercase; }
 
 .heading-primary-main {
   display: block;
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 35px;
+  opacity: 10;
   animation-name: moveInLeft;
   animation-duration: 3s;
   animation-delay: 2s; }
 
 .heading-primary-sub {
-  padding-top: 50px;
+  padding-top: 30px;
   display: block;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 15px;
+  padding-bottom: 50px;
   /* text-align:center; */
   animation-name: moveRight;
   animation-duration: 3s;
   animation-delay: 2s; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #ffc0cb, #7fffd4); }
 
 *,
 *::after,
@@ -74,7 +82,10 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  color: #e05366; }
+  padding: 25rem 0;
+  color: #686868;
+  font-weight: 200;
+  margin-top: -20vh; }
 
 .btn:link,
 .btn:visited {
@@ -120,7 +131,9 @@ body {
   animation: moveBottom .5s ease-out .75; }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322)), url("image/crazy.jpg");
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322));
+  background-image: url("elements-of-art-6.webp");
   background-size: cover;
   background-position: left;
   background-color: #e74cec;
