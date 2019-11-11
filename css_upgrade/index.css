@@ -72,6 +72,10 @@ html {
 body {
   box-sizing: border-box; }
 
+.section-about {
+  background-color: #f7f7f7;
+  color: #e05366; }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
