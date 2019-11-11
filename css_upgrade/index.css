@@ -9,7 +9,7 @@ body{
 
 .header{
     
-    background-image:linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322)), url('image/crazy.jpg');
+    background-image:linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322)), url('image/amaze.jpeg');
     background-size: cover;
     background-position: left;
     background-color: #e74cec;
