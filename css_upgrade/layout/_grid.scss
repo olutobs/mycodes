@@ -1,5 +1,6 @@
 .row{
    max-width:$grid-width;
+   max-height: 1440rem;
    background-color:$color-very-close-to-white;
     margin: 1 auto;
   
@@ -10,13 +11,14 @@
 
     [class^="col-"]{
     padding-top: 5px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-align: center;
     height: 40px;
      
     float: left;
     &:not(:last-child){
     margin-right: $gutter-horizontal;
+    // background-color:blue;
          }
     }
 
