@@ -192,11 +192,11 @@ body {
     position: absolute;
     height: 200px; }
     .composition__photo--p1 {
-      left: 0;
+      left: -7;
       top: -2rem; }
     .composition__photo--p2 {
-      left: 30%;
-      top: -4rem; }
+      left: 10%;
+      top: -5rem; }
     .composition__photo--p3 {
       left: 20%;
       top: 1rem; }
