@@ -3,11 +3,11 @@
     padding-right: 8em;
 
     &__photo {
-        width: 150px;
-        box-shadow: 0 1.5rem 4rem rgba($black, .4);
+        width:200px ;
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0, .4);
         border-radius: 2px;
         position: absolute;
-        height: 150px;
+        height:200px;
         // max-width: 56.25em, 20vw;
         // max-width: 37.5em, 30vw, 300px;
     
@@ -34,23 +34,28 @@
         }
 
         &--p2 {
-            left: 0;
-            top: 2rem;
-
+            left: 30%;
+            top: -4rem;
+        
         }
 
         &--p3 {
             left: 20%;
-            top: 10rem;
+            top: 1rem;
 
           
+        }
+
+        &--p4{
+            left: 5%;
+            top: 5rem;
         }
 
         &:hover {
             outline: 1.5rem solid #FFABA8;
             // transform: scale(1.05) translateY(-.5rem);
             transform: scale(1.00) translateY(-.5rem);
-            box-shadow: 0 2.5rem 4rem rgba($black, .5);
+            box-shadow: 0 2.5rem 4rem rgba(0,0,0, .5);
             z-index: 20;
         }
 
