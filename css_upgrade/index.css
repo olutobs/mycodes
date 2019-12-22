@@ -201,6 +201,10 @@ body {
   box-sizing: border-box; }
 >>>>>>> 53da65a30b94d5d34a698aff58f718d27d810888
 
+.section-about {
+  background-color: #f7f7f7;
+  color: #e05366; }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
