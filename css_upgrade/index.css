@@ -156,7 +156,7 @@ transform: translate(0);
 
 body {
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  color: white;
+  color: #DC143C;
   font-size: 16px;
   line-height: 1.7;
   font-weight: 400;
@@ -164,28 +164,70 @@ body {
   padding: 3rem; }
 
 .heading-primary {
-  color: white;
+  color: #DB7093;
   text-transform: uppercase; }
 
 .heading-primary-main {
   display: block;
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 35px;
+  opacity: 10;
   animation-name: moveInLeft;
   animation-duration: 3s;
   animation-delay: 2s; }
 
 .heading-primary-sub {
-  padding-top: 50px;
+  padding-top: 30px;
   display: block;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 15px;
+  padding-bottom: 50px;
   /* text-align:center; */
   animation-name: moveRight;
   animation-duration: 3s;
   animation-delay: 2s; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #ffc0cb, #7fffd4);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(15deg) skewX(15deg);
+    text-shadow: .5rem  1rem 2rem #FFC0CB; }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: none; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-top: -5rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
 
 *,
 *::after,
@@ -203,7 +245,10 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  color: #e05366; }
+  padding: 25rem 0;
+  color: #686868;
+  font-weight: 200;
+  margin-top: -20vh; }
 
 .btn:link,
 .btn:visited {
@@ -248,8 +293,57 @@ body {
 .btn-animated {
   animation: moveBottom .5s ease-out .75; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #e05366;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #DB7093;
+  transform: all .2s; }
+
+.btn-text:hover {
+  background-color: #7fffd4;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.composition {
+  position: relative;
+  padding-right: 8em; }
+  .composition__photo {
+    width: 300px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    height: 300px;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 1800;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #FFABA8;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .header {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322)), url("image/crazy.jpg");
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.192), rgba(255, 0, 0, 0.322));
+  background-image: url("elements-of-art-6.webp");
   background-size: cover;
   background-position: left;
   background-color: #e74cec;
@@ -276,8 +370,9 @@ body {
   text-align: center; }
 
 .row {
-  max-width: 144rem;
-  background-color: #eee;
+  max-width: 2440rem;
+  height: 14rem;
+  background-color: #f7f7f7;
   margin: 1 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -287,16 +382,14 @@ body {
     clear: both; }
   .row [class^="col-"] {
     padding-top: 5px;
-    text-transform: uppercase;
+    padding-right: 80px;
     text-align: center;
     height: 40px;
-    background-color: cornflowerblue;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem)/2);
-    background-color: cornflowerblue; }
+    width: calc((100% - 6rem)/2); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-1-of-4 {

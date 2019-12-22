@@ -1,6 +1,7 @@
 .row{
    max-width:$grid-width;
-   background-color:$color-white-grey;
+   height: 14rem;
+   background-color:$color-very-close-to-white;
     margin: 1 auto;
   
     &:not(:last-child){
@@ -10,19 +11,21 @@
 
     [class^="col-"]{
     padding-top: 5px;
-    text-transform: uppercase;
+    padding-right: 80px;
+    // text-transform: uppercase;
     text-align: center;
     height: 40px;
-    background-color:cornflowerblue;   
+     
     float: left;
     &:not(:last-child){
     margin-right: $gutter-horizontal;
+    // background-color:blue;
          }
     }
 
     .col-1-of-2{
     width: calc((100% - #{$gutter-horizontal})/2) ;
-    background-color: cornflowerblue;
+    
     }
 
     .col-1-of-3{
