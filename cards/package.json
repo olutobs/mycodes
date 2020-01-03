@@ -1,11 +1,10 @@
 {
-    "name": "natours",
+    "name": "cad",
     "version": "1.0.0",
     "description": "Landing page for natous",
     "main": "index.js",
     "scripts": {
-        "compile:sass": "node-sass main.scss index.css -w",
-         "compile:cards": "node-sass main2.scss style2.css -w"
+        "compile:sass": "node-sass main.scss index.css -w"
     },
     "author": "Tobi",
     "license": "ISC",
