@@ -1,10 +1,10 @@
 {
-    "name": "cad",
+    "name": "cards",
     "version": "1.0.0",
-    "description": "Landing page for natous",
+    "description": "idecide is amazing",
     "main": "index.js",
     "scripts": {
-        "compile:sass": "node-sass main.scss index.css -w"
+        "compile:sass": "node-sass main.scss style.css -w"
     },
     "author": "Tobi",
     "license": "ISC",

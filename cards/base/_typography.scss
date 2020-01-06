@@ -1,0 +1,28 @@
+.card-title {
+    font-size:3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all .2s;
+    // display: inline-block;
+    // background-image: linear-gradient(to right, #ffc0cb, #7fffd4);
+    // -webkit-background-clip: text;
+    // color:transparent;
+   
+
+
+    &:hover {
+        transform: skewY(15deg) skewX(15deg); //scale(1.1)
+        text-shadow: .5rem 1rem 2rem #000000;
+
+    }
+}
+.color{
+
+}
+
+.card{
+
+
+
+}
