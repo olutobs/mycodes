@@ -11,21 +11,41 @@
     font-style: normal;
 
 }
-.heading-secondary {
+body{
+    background: rgb(191, 233, 148);
+    background-image: radial-gradient(circle, rgba(191, 233, 148, 1) 13%, #20B2AA 100%);
+   
+}
+.heading-secondary{
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-image: linear-gradient(to right, #7ed56f, rgb(191, 233, 148));
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
 }
+.card__picture {
+    
+    
+    font-weight: 900;
+       background-size: cover;
+       height: 23rem;
+       
+       
+     
+    
+   
+   
+}
 
 @media only screen and (max-width: 56.25em) {
     .heading-secondary {
         font-size: 3rem;
+    
+        
     }
 }
 
@@ -117,7 +137,7 @@ body {
 
 body {
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    /*font-weight: 400;
     /*font-size: 16px;*/
     line-height: 1.7;
     color: #777;
@@ -126,7 +146,7 @@ body {
 
 
  .paragraph {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
 }
 
 .paragraph:not(:last-child) {
@@ -313,7 +333,7 @@ body {
 }
 
 .card__side {
-    height: 52rem;
+    height: 38rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -356,7 +376,7 @@ body {
 
 .card__picture {
     background-size: cover;
-    height: 23rem;
+    height: 20rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -383,8 +403,8 @@ body {
     text-align: right;
     color: #fff;
     position: absolute;
-    top: 12rem;
-    right: 2rem;
+    top: 7rem;
+    right: rem;
     width: 75%;
 }
 
@@ -439,7 +459,7 @@ body {
 .card__price-box {
     text-align: center;
     color: #fff;
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
 }
 
 .card__price-only {
@@ -459,6 +479,7 @@ only screen and (hover: none) {
         border-radius: 3px;
         background-color: #fff;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        padding-bottom: -5rem;
     }
 
     .card__side {
@@ -523,7 +544,7 @@ only screen and (hover: none) {
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
     }
 }
-
+hhhh
 /* .composition__photo--p1 {
     left: 0;
     top: -2rem;
@@ -672,6 +693,7 @@ only screen and (hover: none) {
         margin-bottom: 2rem;
     }
 } */
+
 
 .form__radio-input {
     display: none;
