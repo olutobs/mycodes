@@ -1,0 +1,43 @@
+<head>
+<title>hello</title>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  
+
+
+
+</head>
+<body>
+
+<!-- the p in the p tag stand for paragraph -->
+
+ <p style="font-size: ;">THE MONK DIAMOND DISCOVERY</p>
+ <p>Please enter the password to view this website.</p>
+ 
+
+ <!-- attributes -->
+
+
+
+<p>Password:<input id="passwordBox" type="password"/></p>
+ <a href="diamond.html" onclick="return checkPassword();">
+  Take to next page
+  
+<!-- functions -->
+
+ <script>
+
+
+  function checkPassword() {
+ const password = document.getElementById("passwordBox");
+ const  passwordText = password.value;
+
+   if(passwordText == "olaogun") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+
+
+ </script>
+</body>

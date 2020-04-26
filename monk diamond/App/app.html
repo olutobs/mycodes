@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+<link rel="stylesheet" href="app.css">
+    
+       <form>
+
+  	<h4 class="header" id="header">Yearly planner </h4>
+
+  <ul id="ulContent">
+
+   </ul>
+
+    <p> time to do the action</p>
+   <input id="time" type="date"><br><br>
+   <p> what you want to do </p>
+
+   <input id="todo" class="todo">
+
+ <button id="submit" type="button">submit</button>
+
+  </form>
+</div>
+<script>
+  const id = (x)=> document.getElementById(x)
+const query = (x) => document.querySelector(x)
+
+
+
+
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes()
+
+const addNewElement = (e)=> {
+
+  const parent = id('ulContent')
+  const typeTodo = id('todo').value
+  const currTime = id('time').value
+  const newElement = document.createElement('li') // created a new element
+  newElement.innerHTML= `${time} - ${typeTodo}`
+  newElement.setAttribute('class', 'yeah')
+  parent.appendChild(newElement)
+
+}
+
+id('submit').addEventListener('click', addNewElement)
+  
+</script>
+  </body>
+</html>
