@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        #header, h4{
+            color: green;
+            text-align: center;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .button {
+            margin-top: 50px;
+            margin-left: 34%
+        }
+
+        #msg{
+            text-align: center;
+ 
+            text-transform: uppercase;    
+     
+        }
+
+        #dice{
+            font-size: 170px;
+            text-align: center;
+        }
+
+        .col-sm{
+            border: 10px solid #1C6EA4;
+        }
+
+  
+    </style>
+  </head>
+  <body>
+
+    <h2 id="header"> Lottery Game : Win by clicking the button</h2>
+    <hr class="border border-danger">
+
+    <h4>See if you can be lucky and match No 4 after five attempts</h4>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm" id="msg">
+           <!-- <h1 id="msg"></h1> -->
+          </div>
+          <div class="col-sm" id="dice">
+         
+          </div>
+          <div class="col-sm" id="diceImg">
+
+          
+         
+          </div>
+        </div>
+      </div>
+
+    <button type="button" id="button" class="btn btn-primary btn-lg  button">CLICK ME NOW TO WIN</button>
+
+    <button type="button" id="reset" class="btn btn-primary btn-lg  button">RESET</button>
+
+   
+
+      
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
